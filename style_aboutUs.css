@@ -1,0 +1,221 @@
+body{
+    background-color: #ffffff;
+  }
+  
+
+  .navbar-toggler span {
+    display: block;
+    background-color: #4f4f4f;
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
+  }
+  
+  .navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  
+  .navbar-toggler span:nth-child(2) {
+    opacity: 1;
+  }
+  
+  .navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  
+  .navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg);
+  }
+  
+
+@media (min-width : 1024px) {
+    
+    .offcanvas {
+      visibility      : visible;
+      position        : relative;
+      background      : none;
+      border          : none;
+      justify-content : end;
+    }
+    .program-nav{
+      display: none;
+      visibility: hidden;
+    }
+  
+    #form-mobile{
+      display: none;
+      visibility: hidden;
+    }
+  
+    .sosmed-nav{
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  /* TABLET */
+@media (max-width: 968px) {
+  .offcanvas {
+    width : 450px !important;
+  }
+  .offcanvas-start-lg {
+    top          : 0;
+    left         : 0;
+    transform    : translateX(-100%);
+    transition: all .25s ease-out;
+  }
+
+  .konten-mobile{
+    display: none;
+    visibility: hidden;
+  }
+
+  #form-web{
+    display: none;
+    visibility: hidden;
+  }
+}
+  
+  @media (max-width : 767px) {
+    .offcanvas {
+      width : 250px !important;
+    }
+    .offcanvas-start-lg {
+      top          : 0;
+      left         : 0;
+      border-right : 1px solid rgba(0, 0, 0, .2);
+      transform    : translateX(-100%);
+      transition: all .25s ease-out;
+    }
+    .card-img-overlay{
+      left: 10%;
+      top: 50% !important;
+      transform: translateY(-30%);
+      text-align: left;
+      bottom: initial;
+      text-align: left ;
+    }
+    .navbar{
+      position: fixed;
+      right: 0;
+      left: 0;   
+      border-radius: 0;
+      top: 0;
+      z-index: 9999;
+    } 
+  
+    #form-web{
+      display: none;
+      visibility: hidden;
+    }
+  
+    #konten-about{
+      margin-top: 60px;
+    }
+  }
+  
+    
+  @font-face {
+    font-family: Gotham-Black;
+    src: url(font/Gotham-Black.otf);
+  }
+  
+  @font-face {
+    font-family: Gotham-Medium;
+    src: url(font/GothamMedium.ttf);
+  }
+  
+  @font-face {
+    font-family: Gotham-Light;
+    src: url(font/Gotham-Light.otf);
+  }
+
+  #judul-nav {
+    display: inline-block;
+    position: relative;
+  }
+  
+  #judul-nav:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #10317E;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  #judul-nav:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  #judul-nav:hover{
+    color: #10317E;
+    font-weight: 700;
+  }
+  
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: #000000;
+    border-radius: 2px;
+}
+
+
+ .card-img-overlay{
+  left: 10%;
+  top: 50% !important;
+  transform: translateY(-30%);
+  text-align: left;
+  bottom: initial;
+  text-align: left ;
+}
+
+.text{
+    left: 10%;
+    top: 50% !important;
+    transform: translateY(-30%);
+    text-align: left;
+    bottom: initial;
+}
+
+.text h2 {  
+    margin: 0px ;
+    padding: 0px ;
+    text-align: left ;
+    font-size: 36px;
+}
+
+#banner_about{
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0)5%, rgba(0, 0, 0, 0.73) 90%),
+    url('https://ni-cons.com/wp-content/uploads/services-background-2.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    color: white;
+    background-position: center;
+}
+
+ 

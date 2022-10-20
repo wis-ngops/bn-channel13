@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Berita harian Indonesia yang menyajikan informasi terbaru, baik nasional, Internasional, politik, ekonomi, bisnis, hukum, travel, teknologi, otomotif, bola, viral, infografis, video, selebriti, hingga gosip artis.">
+    <meta name="keywords" content="Nasional,Internasional,Teknologi,Ekonomi,Otomotif,Lifestyle,Cek Fakta, Most Popular">
+    <meta name="author" content="Data Khoiriyah">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Berita Hiburan Terpopuler</title>
+      <link rel="icon" type="image/x-icon" href="img/bn-channel-icon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="toruskit-free/dist/css/toruskit.bundle.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style_life.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light  bg-light shadow-sm sticky-sm-top" aria-label="Navbar BN" style="font-family: Gotham-Medium;">
+      <div class="container ">
+          <a href="index.html" class="navbar-brand" href="#">
+              <img class="img-fluid justify-content-center" width="75" height="25" src="img/bn-channel.png"  alt="" >
+          </a>
+  
+          <button class="navbar-toggler collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#offcanvasExample"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="transition: 20000s;">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+  
+        <div class="offcanvas offcanvas-start-lg" tabindex="-1" data-bs-scroll="true"  id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header d-flex d-lg-none py-4" style="background-image: url('img/bg-offcanvas.jpg'); background-position: center right; background-size: cover;">
+            <img class="img-fluid justify-content-center" width="75" height="25" src="img/bn-channel.png"  alt="" >
+          </div>
+  
+          <div class="offcanvas-body">
+            <form id="form-mobile" class="navbar-form" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control rounded-0" placeholder="Search" style="font-family: gotham; opacity: 0.5;">
+                <div class="input-group-btn">
+                  <a class="btn btn-primary rounded-0" href="search_result.html" id="Search" ><i class="bi bi-search"></i></a>
+                </div>
+              </div>
+            </form>
+  
+            <ul class="navbar-nav me-auto ">
+              <li class="nav-item mx-1"><a class="nav-link" id="judul-nav" style="font-family: Gotham-Medium; font-size: 16px;" aria-current="page" href="index.html">Home</a></li>
+              <li class="nav-item mx-1 dropdown">
+                <a id="judul-nav" class="nav-link" data-bs-toggle="dropdown" style="font-family: Gotham-Medium; font-size: 16px; " href="#">News<i class="bi bi-caret-down-fill px-1" style="font-size: 12px;"></i></a>
+                <ul class="dropdown-menu shadow-sm mt-2 border-0">
+                    <li class="nav-item "><a class="dropdown-item" style="font-family: Gotham-Medium; font-size: 16px; " href="nasional.html"><i class="bi bi-geo"></i> Nasional</a></li>
+                    <li class="nav-item"><a class="dropdown-item" style="font-family: Gotham-Medium; font-size: 16px; " href="Internasional.html"><i class="bi bi-globe"></i> Internasional</a></li>
+                    <li class="nav-item"><a class="dropdown-item" style="font-family: Gotham-Medium; font-size: 16px; " href="ekonomi.html"><i class="bi bi-coin"></i> Ekonomi</a></li>
+                </ul>
+              </li>
+              <li class="nav-item mx-1 dropdown">
+                <button type="button" style="font-family: Gotham-Black; font-size: 18px; color:#10317E;" href="#" id="judul-nav" class="nav-link btn border-0" data-bs-toggle="dropdown"  data-bs-auto-close="true" aria-expanded="false">Lifestyle<i class="bi bi-caret-down-fill px-1" style="font-size: 12px;"></i></button>
+                <ul class="dropdown-menu shadow-sm mt-2 border-0">
+                    <li class="nav-item "><a class="dropdown-item" style="font-family: Gotham-Medium; font-size: 16px; " href="teknologi.html"><i class="bi bi-laptop"></i> Teknologi</a></li>
+                    <li class="nav-item "><a class="dropdown-item" style="font-family: Gotham-Medium; font-size: 16px; " href="otomotif.html"><i class="bi bi-car-front"></i> Otomotif</a></li>
+                    <li class="nav-item "><a class="dropdown-item" style="font-family: Gotham-Medium; font-size: 16px; " href="lifestyle.html"><i class="bi bi-film"></i> Hiburan</a></li>
+                </ul>
+              </li>
+              <li class="nav-item mx-1"><a id="judul-nav" class="nav-link  " style="font-family: Gotham-Medium; font-size: 16px; " href="index_2.html">Index</a></li>
+              <li class="nav-item mx-1"><a id="judul-nav" class="nav-link  " style="font-family: Gotham-Medium; font-size: 16px; " href="livetv.html">Live TV</a></li>
+              <li class="nav-item mx-1 dropdown">
+                  <a id="judul-nav" class="nav-link" data-bs-toggle="dropdown" style="font-family: Gotham-Medium; font-size: 16px; " href="#">More<i class="bi bi-caret-down-fill px-1" style="font-size: 12px;"></i></a>
+                  <ul class="dropdown-menu shadow-sm mt-2 border-0">
+                    <li><a class="dropdown-item" style="font-family: Gotham-Medium; font-size: 16px;" href="contact.html"><i class="bi bi-person-plus"></i>  Contact</a></li>
+                    <li><a class="dropdown-item" style="font-family: Gotham-Medium; font-size: 16px;" href="aboutUs.html"><i class="bi bi-briefcase"></i>  About Us</a></li>
+                    <li><a class="dropdown-item" style="font-family: Gotham-Medium; font-size: 16px;" href="privacy.html"><i class="bi bi-shield-check"></i>  Privacy</a></li>
+                  </ul>
+              </li>
+            </ul>
+  
+             
+  
+            <form id="form-web" class="navbar-form" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control bg-transparent" placeholder="Search" style="font-family: gotham; opacity: 0.5;">
+                <div class="input-group-btn">
+                  <a class="btn btn-primary" href="search_result.html" id="Search" ><i class="bi bi-search"></i></a>
+                </div>
+              </div>
+            </form>
+  
+            <div class="program-nav">
+              <div class="row gap-2 mx-1 mt-4 mb-2">
+                <span class="nav-link" style="font-family: Gotham-Black; font-size: 17px;">Program</span>
+                <div class="col p-0">
+                  <img class="rounded img-fluid" style="object-fit: cover; width:100%;height: 5rem  ;" src="https://cdn01.metrotvnews.com/images/channel/TOP%20NEWS%201024x768.jpg" alt="">
+                </div>
+  
+                <div class="col">
+                  <img class="rounded img-fluid" style="object-fit: cover; width:100%;height: 5rem  ;" src="https://cdn01.metrotvnews.com/images/channel/NewsLine%201025%20x%20766.jpg" alt="">
+                </div>
+              </div>
+  
+              <div class="row gap-2 mx-1">
+                <div class="col p-0">
+                  <img class="rounded img-fluid" style="object-fit: cover; width:100%;height: 5rem  ;" src="https://cdn01.metrotvnews.com/images/channel/Selamat%20Pagi%20Indonesia%201025x766.jpg" alt="">
+                </div>
+  
+                <div class="col">
+                  <img class="rounded img-fluid" style="object-fit: cover; width:100%;height: 5rem  ;" src="https://cdn01.metrotvnews.com/images/channel/PrimetimeNews%201024%20x%20768.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            
+            <div class="sosmed-nav border-top text-center" style="margin-top: 60px;">
+              <div class="mt-3 mx-auto">
+                <a class="bg-white shadow-sm p-2 rounded-3" href="#"><i class="bi bi-facebook mx-1" style="font-size: 20px;"></i></a>
+                <a class="bg-white shadow-sm p-2 rounded-3" href="#"><i class="bi bi-twitter mx-1" style="font-size: 20px;"></i></a>
+                <a class="bg-white shadow-sm p-2 rounded-3" href="#"><i class="bi bi-instagram mx-1" style="font-size: 20px;"></i></a>
+                <a class="bg-white shadow-sm p-2 rounded-3" href="#"><i class="bi bi-youtube mx-1" style="font-size: 20px;"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+      <!-- HEADLINE -->
+      <nav id="bredcrumbs" class="container mt-3" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" style="text-decoration:none;">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Hiburan</li>
+        </ol>
+      </nav>
+      <div id="life_banner"  class="container-fluid rounded-bottom py-4" style="background-color: #10317E;">
+        <div class="container">
+
+          <!-- KONTEN -->
+          <div class="row ">
+           <!-- ATASNYA -->
+           <div class="col-lg-6" id="img-headline">
+            <div class="card border-0 bg-transparent mb-1 rounded" style="border-radius: 8px;">
+              <div class="hover-mask">
+                <a href="">
+                  <im id="headline-samping" class="card-img img-fluid rounded-start" style="width: 100%;min-height: 50px; max-height: 340px; object-fit: cover;" alt="..." src="https://cdn.medcom.id/dynamic/content/2022/07/26/1456052/4NYq0QK8wx.jpg?w=330">
+                  <span class="header"><img class="play" src="https://www.friidesigns.com/wp-content/uploads/2018/11/white-play-icon-png-6.png" alt=""></h2></span>
+                </a>
+              </div>
+              <div class="card-body p-0 mt-2">
+                <h4 class="text-white card-title" style="font-size:22px; font-family: Gotham-Medium;">Keisya Levronka Trending Topic usai 'Disentil' Ivan Gunawan: Sakit Hatinya Sampe Ubun-Ubun</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- SAMPING -->
+          <div class="col-lg-6"> 
+            <div class="row">
+              <div class="card-group"> 
+                <div class="col-lg-6 px-2">
+                  <div class="card border-0 bg-transparent mb-1 rounded" style="border-radius: 8px;">
+                    <div class="hover-mask">
+                      <a href="">
+                    <img id="headline-samping" class="card-img img-fluid rounded-start" alt="..." src="data:image/jpeg;base64,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">
+                        <span class="samping"><img class="play" src="https://www.friidesigns.com/wp-content/uploads/2018/11/white-play-icon-png-6.png" alt=""></h2></span>
+                      </a>
+                    </div>
+                    <div class="card-body p-0 mt-2">
+                        <h6 class="text-white card-title" style=" font-size: 15px; font-family: Gotham-Medium;">Pakai Teknologi IMAX, Film Pengabdi Setan 2 Bakal Lebih Menegangkan</h6>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-lg-6 px-2">
+                  <div class="card border-0 bg-transparent mb-1 rounded" style="border-radius: 8px;">
+                    <div class="hover-mask">
+                      <a href="">
+                        <img id="headline-samping" class="card-img img-fluid rounded-start" alt="..." src="https://cdn-2.tstatic.net/tribunnews/foto/bank/images/avengers-the-kang-dynasty.jpg">
+                        <span class="samping"><img class="play" src="https://www.friidesigns.com/wp-content/uploads/2018/11/white-play-icon-png-6.png" alt=""></h2></span>
+                      </a>
+                    </div>
+                    <div class="card-body p-0 mt-2">
+                        <h6 class="text-white card-title" style=" font-size: 15px; font-family: Gotham-Medium;">Marvel Umumkan Avengers 5 & 6 Rilis 2025</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row mt-2">
+              <div class="card-group">
+                <div class="col-lg-6 px-3">
+                  <div class="card border-0 bg-transparent mb-1 rounded" style="border-radius: 8px;">
+                    <div class="hover-mask">
+                      <a href="">
+                    <img id="headline-samping" class="card-img img-fluid rounded-start" alt="..." src="data:image/jpeg;base64,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">
+                        <span class="samping"><img class="play" src="https://www.friidesigns.com/wp-content/uploads/2018/11/white-play-icon-png-6.png" alt=""></h2></span>
+                      </a>
+                    </div>
+                    <div class="card-body p-0 mt-2">
+                        <h6 class="text-white card-title" style=" font-size: 15px; font-family: Gotham-Medium;">Denny Caknan Terjun ke Bisnis Kuliner</h6>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-lg-6 px-2">
+                  <div class="card border-0 bg-transparent mb-1 rounded" style="border-radius: 8px;">
+                    <div class="hover-mask">
+                      <a href="">
+                    <img id="headline-samping" class="card-img img-fluid rounded-start" alt="..." src="data:image/jpeg;base64,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">
+                        <span class="samping"><img class="play" src="https://www.friidesigns.com/wp-content/uploads/2018/11/white-play-icon-png-6.png" alt=""></h2></span>
+                      </a>
+                    </div>
+                    <div class="card-body p-0 mt-2">
+                        <h6 class="text-white card-title" style=" font-size: 15px; font-family: Gotham-Medium;">Baim Wong Cabut Pendaftaran Merek Citayam Fashion Week</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+
+        <!-- page 1 -->
+        <div class="container pt-4 pb-3 bg-light rounded">
+          <div class="row">
+            <div class="col-lg-9">
+              <h5 class="rounded rounded-3 p-1" style=" text-align: left; font-family: Gotham-Black; font-size: 22px;"><span class="border-start border-primary border-3 px-1"></span>FEATURED VIDEO</h5>
+              <div class="card mt-3 border-0 bg-light">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <div class="hover-mask">
+                      <a href="">
+                        <img src="https://cdn.medcom.id/dynamic/content/2022/08/04/1459467/yhWKpUl9a3.jpg?w=1024" class="card-img img-fluid rounded-start" id="img-page" alt="...">
+                        <span><h2><img class="play" src="https://www.friidesigns.com/wp-content/uploads/2018/11/white-play-icon-png-6.png" alt=""></h2></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body p-0 px-3" id="page-life">
+                      <h3 class="card-title" style="font-size:22px; font-family: Gotham-Medium;">Tayang Hari Ini, Film Pengabdi Setan 2: Communion Trending Twitter</h3>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mt-3 border-0 bg-light border-top pt-3">
+                        <div class="row g-0">
+                          <div class="col-md-3">
+                            <div class="hover-mask">
+                              <a href="">
+                                <img src="https://cdn.medcom.id/dynamic/content/2022/08/04/1459449/LIb3FcVr91.jpg?w=1024" class="card-img img-fluid rounded-start" id="img-page" alt="...">
+                                <span><h2><img class="play" src="https://www.friidesigns.com/wp-content/uploads/2018/11/white-play-icon-png-6.png" alt=""></h2></span>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body p-0 px-3" id="page-life">
+                              <h3 class="card-title" style="font-size:22px; font-family: Gotham-Medium;">Alasan Nathalie Holscher Hapus Tato Ternyata karena Ditantang Sule</h3>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+              </div>
+
+              <div class="card mt-3 border-0 bg-light border-top pt-3">
+                      <div class="row g-0">
+                        <div class="col-md-3">
+                          <div class="hover-mask">
+                            <a href="">
+                              <img src="https://cdn.medcom.id/dynamic/content/2022/08/04/1459567/UBuNcM60Qx.jpg?w=1024" class="card-img img-fluid rounded-start" id="img-page" alt="...">
+                              <span><h2><img class="play" src="https://www.friidesigns.com/wp-content/uploads/2018/11/white-play-icon-png-6.png" alt=""></h2></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-0 px-3" id="page-life">
+                            <h3 class="card-title" style="font-size:22px; font-family: Gotham-Medium;">Film Batgirl Batal Dirilis, Leslie Grace Tulis Pesan untuk Penggemar</h3>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+
+              <div class="card mt-3 border-0 bg-light border-top pt-3">
+                    <div class="row g-0">
+                      <div class="col-md-3">
+                        <div class="hover-mask">
+                          <a href="">
+                            <img src="https://cdn.medcom.id/dynamic/content/2022/08/03/1459172/5CMR9iZHg1.jpg?w=1024" class="card-img img-fluid rounded-start" id="img-page" alt="...">
+                            <span><h2><img class="play" src="https://www.friidesigns.com/wp-content/uploads/2018/11/white-play-icon-png-6.png" alt=""></h2></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body p-0 px-3" id="page-life">
+                          <h3 class="card-title" style="font-size:22px; font-family: Gotham-Medium;">Birdhouse, Resor Berbentuk Unik di Bali</h3>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="card mt-3 border-0 bg-light border-top pt-3">
+                  <div class="row g-0">
+                    <div class="col-md-3">
+                      <div class="hover-mask">
+                        <a href="">
+                          <img src="https://cdn.medcom.id/dynamic/content/2022/08/03/1459284/JrjQ83Z4p0.jpg?w=1024" class="card-img img-fluid rounded-start" id="img-page" alt="...">
+                          <span><h2><img class="play" src="https://www.friidesigns.com/wp-content/uploads/2018/11/white-play-icon-png-6.png" alt=""></h2></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0 px-3" id="page-life">
+                        <h3 class="card-title" style="font-size:22px; font-family: Gotham-Medium;">Dijual untuk Bayar Utang, Intip Interior Rumah Amber Heard</h3>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="card mt-3 border-0 bg-light border-top pt-3">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <div class="hover-mask">
+                      <a href="">
+                        <img src="https://cdn.medcom.id/dynamic/content/2022/08/04/1459467/yhWKpUl9a3.jpg?w=1024" class="card-img img-fluid rounded-start" id="img-page" alt="...">
+                        <span><h2><img class="play" src="https://www.friidesigns.com/wp-content/uploads/2018/11/white-play-icon-png-6.png" alt=""></h2></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body p-0 px-3" id="page-life">
+                      <h3 class="card-title" style="font-size:22px; font-family: Gotham-Medium;">Tayang Hari Ini, Film Pengabdi Setan 2: Communion Trending Twitter</h3>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mt-3 border-0 bg-light border-top pt-3">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <div class="hover-mask">
+                      <a href="">
+                        <img src="https://cdn.medcom.id/dynamic/content/2022/08/04/1459567/UBuNcM60Qx.jpg?w=1024" class="card-img img-fluid rounded-start" id="img-page" alt="...">
+                        <span><h2><img class="play" src="https://www.friidesigns.com/wp-content/uploads/2018/11/white-play-icon-png-6.png" alt=""></h2></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body p-0 px-3" id="page-life">
+                      <h3 class="card-title" style="font-size:22px; font-family: Gotham-Medium;">Film Batgirl Batal Dirilis, Leslie Grace Tulis Pesan untuk Penggemar</h3>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mt-3 border-0 bg-light border-top pt-3">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <div class="hover-mask">
+                      <a href="">
+                        <img src="https://cdn.medcom.id/dynamic/content/2022/08/03/1459284/JrjQ83Z4p0.jpg?w=1024" class="card-img img-fluid rounded-start" id="img-page" alt="...">
+                        <span><h2><img class="play" src="https://www.friidesigns.com/wp-content/uploads/2018/11/white-play-icon-png-6.png" alt=""></h2></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body p-0 px-3" id="page-life">
+                      <h3 class="card-title" style="font-size:22px; font-family: Gotham-Medium;">Dijual untuk Bayar Utang, Intip Interior Rumah Amber Heard</h3>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mt-3 border-0 bg-light border-top pt-3">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <div class="hover-mask">
+                      <a href="">
+                        <img src="https://cdn.medcom.id/dynamic/content/2022/08/04/1459449/LIb3FcVr91.jpg?w=1024" class="card-img img-fluid rounded-start" id="img-page" alt="...">
+                        <span><h2><img class="play" src="https://www.friidesigns.com/wp-content/uploads/2018/11/white-play-icon-png-6.png" alt=""></h2></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body p-0 px-3" id="page-life">
+                      <h3 class="card-title" style="font-size:22px; font-family: Gotham-Medium;">Alasan Nathalie Holscher Hapus Tato Ternyata karena Ditantang Sule</h3>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <ul class="pagination justify-content-center mt-5 pb-5">
+                  <li class="page-item active"><a class="page-link" href="#" >1</a></li>
+                  <li class="page-item"><a class="page-link" href="#" >2</a></li>
+                  <li class="page-item"><a class="page-link" href="#" >3</a></li>
+                  <li class="page-item"><a class="page-link" href="#" >Next</a></li>
+              </ul>
+            </div>
+      
+      <!-- SIDE -->
+      <div class="col-lg-3" >
+        <div class="sticky-xl-top" style="z-index: 1;" >
+          <!-- POPULAR -->
+          <div class="row">
+            <div class="col" >
+                        <h5 class="rounded rounded-3 p-1" style=" text-align: left; font-family: Gotham-Black; font-size: 22px;"><span class="border-start border-primary border-3 px-1"></span>POPULAR</h5>
+                        <div class="konten-mobile">
+                          <div class="d-flex position-relative">
+                            <img id="popular" src="https://imgsrv2.voi.id/lxgW5Zve3Hw-sjwoCAJ5XvngP97rNosTPPXuoR_YlLI/auto/1200/675/sm/1/bG9jYWw6Ly8vcHVibGlzaGVycy8xOTYyNDUvMjAyMjA3MzExNDE3LW1haW4uY3JvcHBlZF8xNjU5MjUxODQ1LmpwZWc.jpg" class="flex-shrink-0 me-3 img-fluid" alt="...">
+                            <div>
+                              <h2  class="mt-0" style="font-family: Gotham-Medium; font-size: 15px;">Ancaman Blokir Akibat Tidak Daftar PSE</h2 >
+                            </div>
+                          </div>
+      
+                          <div class="d-flex position-relative mt-3">
+                            <img id="popular" src="https://akcdn.detik.net.id/visual/2019/05/09/919165b2-707e-4436-87f6-66ea239a2b47_169.jpeg?w=715&q=90" class="flex-shrink-0 me-3 img-fluid" alt="...">
+                            <div>
+                              <h2  class="mt-0" style="font-family: Gotham-Medium; font-size: 15px;">Eks Bos Unit Investasi Startup Bank Mandiri Berlabuh di BNI</h2 >
+                            </div>
+                          </div>
+      
+                          <div class="d-flex position-relative mt-3">
+                            <img id="popular" src="https://akcdn.detik.net.id/visual/2022/07/18/jennifer-lopez-dan-ben-affleck-reutersmario-anzuoni-1_169.jpeg?w=715&q=90" class="flex-shrink-0 me-3 img-fluid" alt="...">
+                            <div>
+                              <h2  class="mt-0" style="font-family: Gotham-Medium; font-size: 15px;">Menunggu 20 Tahun, JLo dan Ben Affleck Akhirnya Menikah</h2 >
+                            </div>
+                          </div>
+      
+                          <div class="d-flex position-relative mt-3">
+                            <img id="popular" src="https://akcdn.detik.net.id/visual/2020/02/13/e3f17865-5a14-4b31-bcc4-b420844a856d_169.jpeg?w=715&q=90" class="flex-shrink-0 me-3 img-fluid" alt="...">
+                            <div>
+                              <h2  class="mt-0" style="font-family: Gotham-Medium; font-size: 15px;">Nunggak Berjamaah! Saham 12 Emiten Ini Kena Suspen BEI</h2 >
+                            </div>
+                          </div>
+      
+                          <div class="d-flex position-relative mt-3">
+                            <img id="popular" src="https://cdn.medcom.id/dynamic/content/2022/08/04/1459467/yhWKpUl9a3.jpg?w=1024" class="flex-shrink-0 me-3 img-fluid" alt="...">
+                            <div>
+                              <h2  class="mt-0" style="font-family: Gotham-Medium; font-size: 15px;">Tayang Hari Ini, Film Pengabdi Setan 2: Communion Trending Twitter</h2 >
+                            </div>
+                          </div>
+                </div>
+            </div> 
+
+            <div class="mt-4">
+              <button type="button" class="btn btn-primary rounded-0 position-absolute"><i class="bi bi-badge-ad"></i></button>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReUMBKjcx7tjGNL-dTu7vVOqijBMmeXrpetA&usqp=CAU" style="width: 100%;height: 7vw; min-height: 170px; object-fit: cover;" alt="">
+            </div>
+
+            <!-- SOCMED -->
+            <div class="mt-4">
+              <h6 style="color:#10317E; text-align: left; font-size: 25px;font-family: Gotham-Black;" ><span class="border-start border-primary border-3 px-1"></span>Connect With Us !</h2>
+                <div class="row g-0">
+                  <div class="d-grid col-6 px-1">
+                    <button class="btn btn-outline-primary  text-start my-1"><i class="bi bi-facebook mx-2"></i>12k Likes</button>
+                    <button class="btn btn-outline-info  text-start my-1" style="--bs-btn-hover-color: var(--bs-white);"><i class="bi bi-twitter mx-2"></i>1.2k Tweets</button> 
+                  </div>
+                
+                  <div class="d-grid col-6 px-1">
+                    <button class="btn btn-outline-warning  text-start my-1" style="--bs-btn-hover-color: var(--bs-white);"><i class="bi bi-instagram mx-2"></i>50k Likes</button>
+                    <button class="btn btn-outline-danger  text-start my-1"><i class="bi bi-youtube mx-2"></i>132k Subs</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      </div>
+          </div>
+        </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-white mt-5 pb-5">
+    <div class="container">
+      <div class="row g-4 pt-3" >
+
+        <!-- BN TV -->
+        <div class="col-lg-4">
+          <div class="hstack gap-3">
+            <img class="img-fluid mb-2  " src="img/bn-channel.png" width="90" height="25" alt="">
+            <p style="font-family:Gotham-Light; font-size:10px;">
+              BNTV Business News Television adalah sebuah stasiun televisi terestrial digital swasta nasional di Indonesia yang dimiliki oleh Media Group. Stasiun televisi ini beroperasi dari Kebon Jeruk, Jakarta Barat. 
+            </p>
+          </div>
+
+          <div class="hstack gap-3">
+            <a class="bg-white shadow p-2 rounded-3" href="#"><i class="bi bi-facebook mx-1" style="font-size: 20px;"></i></a>
+            <a class="bg-white shadow p-2 rounded-3" href="#"><i class="bi bi-twitter mx-1" style="font-size: 20px;"></i></a>
+            <a class="bg-white shadow p-2 rounded-3" href="#"><i class="bi bi-instagram mx-1" style="font-size: 20px;"></i></a>
+            <a class="bg-white shadow p-2 rounded-3" href="#"><i class="bi bi-youtube mx-1" style="font-size: 20px;"></i></a>
+          </div>
+
+          <p class="text-muted mt-3" style="font-family:Gotham-Light; font-size:12px;">©2022 BN Channel</p>
+        </div>
+
+
+        <div class="col-lg-4">
+          <div class="row" >
+
+            <!-- CATEGORIES -->
+            <div class="col-lg-6 col-md-4 mb-3">
+                <h4 style="font-size: 15px; font-family:Gotham-Medium;">Categories</h4>
+                <li class="nav-link border-0" style="font-family: Gotham-Light; font-size:12px;"><a style="text-decoration: none;" href="nasional.html">Nasional</a></li>
+                <li class="nav-link border-0" style="font-family: Gotham-Light; font-size:12px;"><a style="text-decoration: none;" href="Internasional.html">Internasional</a></li>
+                <li class="nav-link border-0" style="font-family: Gotham-Light; font-size:12px;"><a style="text-decoration: none;" href="ekonomi.html">Ekonomi</a></li>
+                <li class="nav-link border-0" style="font-family: Gotham-Light; font-size:12px;"><a style="text-decoration: none;" href="teknologi.html">Teknologi</a></li>
+                <li class="nav-link border-0" style="font-family: Gotham-Light; font-size:12px;"><a style="text-decoration: none;" href="otomotif.html">Otomotif</a></li>
+                <li class="nav-link border-0" style="font-family: Gotham-Light; font-size:12px;"><a style="text-decoration: none;" href="lifestyle.html">Hiburan</a></li>
+            </div>
+
+            <!-- COMPANY -->
+            <div class="col-lg-6 col-md-4">
+                <h4 style="font-size: 15px; font-family:Gotham-Medium;">Company</h4>
+                <li class="list-group-item border-0" style="font-family: Gotham-Light; font-size:12px;"><a style="text-decoration: none;" href="aboutUs.html">About Us</a></li>
+                <li class="list-group-item border-0" style="font-family: Gotham-Light; font-size:12px;"><a style="text-decoration: none;" href="contact.html">Contact Us</a></li>
+                <li class="list-group-item border-0" style="font-family: Gotham-Light; font-size:12px;"><a style="text-decoration: none;" href="privacy.html">Privacy Policy</a></li>
+                <li class="list-group-item border-0" style="font-family: Gotham-Light; font-size:12px;"><a style="text-decoration: none;" href="#">Career</a></li>
+                <li class="list-group-item border-0" style="font-family: Gotham-Light; font-size:12px;"><a style="text-decoration: none;" href="#">Terms and Condition</a></li>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="col-lg-2">
+          <h4 style="font-size: 15px; font-family:Gotham-Medium;">Contact</h4>
+          <li class="list-group-item border-0" style="font-family: Gotham-Light; font-size:12px;">Toll free:+555 4825</li>
+          <li class="list-group-item border-0" style="font-family: Gotham-Light; font-size:12px;">(9:AM to 8:PM IST)</li>
+          <li class="list-group-item border-0" style="font-family: Gotham-Light; font-size:12px;">Email:bntv@metro.com</li>
+        </div>
+
+        <!-- MEDIA PARTNER -->
+        <div class="col-lg-2">
+          <h4 style="font-size: 15px; font-family:Gotham-Medium;">Media Partner</h4>
+          <a href="https://medcom.id/"><img class="mx-1" width="80" src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Medcom_%282019%29.png" alt=""></a>
+          <a href="https://mediaindonesia.com/"><img class="mx-1" width="80" src="https://m.mediaindonesia.com/assets/default/images/main/logo_white.png" alt=""></a>
+          <a href="https://www.metrotvnews.com/"><img class="mx-1" width="80" src="https://cdn.kibrispdr.org/data/717/metro-tv-news-logo-0.jpg" alt=""></a>
+          <a href="https://www.podme.id/"><img class="mx-1" width="60" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA5FBMVEX///8GTIDaOwEevtb4tgBXJaAHdsUARn0APHfM1uAASn8AQnpggp+YrcAAUINggaLw8/bXKgDo7/T++/H2+PkuXo9ujKmLpbo5Z5NLyt74uR756+euz+p10uCmu83MwN8Ab8G7y9dLCZrzxrrDtNv97sdbl9P74Kfh2O5MDJr2/P7Q2+S05/D629Vuptnwv7Urg8v84asANXP39P3ZIABKc5qzxNMAMXGy5u/M7/MAudX56eORut9rpdbI3vAAa8H73Zrp5PKA1N99mbJLcZnd5u5SfaMuYY42aIwcVYEAK3AaWIx1J3dXAAAH6UlEQVR4nO2cabuTRhSAobZlMnMDMcYQa5uK3ZNW2yhYa3dCcjH///+ULXBmgXC9Ye15P2kYeeZlljOrmoYgCIIgCIIgCIIgCIIgCIIgCIIgCII0yNsfOX5923WGrs6TBwm/nfmi6wxdncwwBw2Hx7gMfxJ4qo3M8N3rhxyvv9KGYvj7Hy8gf5Yke/fwI46HwzH89hnkr89Lkj0dsOGnkGdoOA7Dvz8WeDR2w8/QEBr+86VAx37XN/z6ucCiY8HrG/7wCc+rjgXRcJyG343e8JerGvaxp7luGaJh46AhGkqGz9GwbdAQDdEQDZvnf2Aor5feb+TdO8MXP3Nc37Dz2dOGJ/5pZIYK0DA3/CIVe5Lx4F9tbIYqBmEoRovSVX0V0nppHw0ffSOg3cHw1fcCbeb8PtQ2HCxoOHyeiicVXnado2uzeCnwruscIQiCIAhSk81cZHPpn8ydtW8dDtZy6gXqBAKzq+f6LkzeEwnTWquzHhHYISGMGTEs+pPlSEnmTHojXfleV54TokvQKO8HOecRjksY5ZOScCrkfWZSxSsJcdedSKoMkywRS8rP1iWGIiUz11wylWH63Uz7YhO4PmWGum7ocz6pzRR+qeMefo0Sw/RjKKtGo5Qb6pRCxc2BlGU8+hoUNNxyw+idu2WPDHXjFgi6rDxhzLaWoa4Tt+WaWmWok2mezrogCAq82lBnbo8MKTvvqfhVyRKMU01DnbVbUaEhjeAzQ7JecrsT3aWkOvMVhlSRMH9r64Yn13VXOhcQjH2aasXnkhF9tToRoethgWx4MiMMIYjqRpuBsTA00soTBT2Yl6Rb8GAjpIxNg6j2bmbekau7hiUa0sezRcQmmFLOMS/uTgzjuAfyknSRq7LseTr3JJAM871Rm+upiBBqWzaEQiSO0BOQO5NvRAHsVYzUXWmoOdy3sFvS09SG68KIxT4+yBwR8hbAsjGTn9SGmgOr9KoNtxSVIeh9EsNjYWhIwWwNMr5L6nSJobaEtb908nJ1VIYObzgvQoVJttIbgD9LRghlhgtoOJXe0xQqQ/CxmRd1J4UwVYxHpkXqtDctM9R8kLK9qK8wnICIyCacgurTB0ZeiDSMfyg1nFR/qoaQDDdTA3aPUXtZFsaKSqppYWFoxH8vNVyAsc6ptTM2hSG9tW3btwwuuse946EwNFRxbAUM4wFCqSEMQ7S1YQ2sOfHqC9VNYJhEdxfUWlW+ii9AWfwFyg1hyi4MFeziTh0YmhcMjaEZpvMcUEupKozti1rKatfS9gbfVYbUTJod6GnYhZ6Gxn8v72mKIV4nPY2iCCdJkqtFiy1o8+0N2yrW2kgqCOdO8qCNj/iH+IdSQzC/MG6aV8soXS9l+3Obm4Mk9xq1wZFEe5ML5Zo3Zbu9V6QJQRiTR94gfpLKkbcPDVUNuhmAoZFtMuyMw5TrM/2Kjx+AZ7Ry9uSRToY0cNRmBdsYedjClTM/A57DdabKGTC3EtLiwFs5t5DgVjGIX4QybhWDVqxizJZca1CObxuilqHHZY+FdqIy91xufUmxEnWMRwCb+cQ3uWUaVZfcGLUMYX+ZFBYzj8cTFdYIz70HXE0009VEYUtn194Mv67hVuhxVQu9yhVhXbEg3O5iYk1Dzb68qn88p720qk9Xrd6/qGmoHS7uzOQ174IhFfclG6au4aJ6d43Surtr/K5kC9Q11DSraqfRBN1/pSFZtSx4B8OoLVKzJNsuzHaFIWXt7+TfwVDb3u4UeTcYq3VSQafGzmozTGRMCM2os3Hp7Bnjun9qsFCcM0aGPHHji75D6HfgFxnuqJFSb2s2sFcsPjFEk0yTcOlI1W5+fmNGpPjYXa5bHKhxLO5+OGs+mfrL5c3St71AGdmkg2Szzi8gIgiCIPcisG7OWMqI5efPb9JFqEXxLySsDk5XXmKyyyMzOyieO6R4nq5SzJhRCuujYTFjUG3Sc5spmWHF2cqeG6oWiBxwoG0EhoqV6Fu4HDoCQ0NsidwpnzEYnvfTcvaK9dBhGwqF6PDruGMwzM5tnXE5mXEY0j145vDPZEMq3o7Z9d9Q34GWKJwMlg1DR6QjiypEQ7AFKhShbEiPZW/tE9IeMMkLUShClWEPK6WEVIZ5IYpFOBbDohBdsc8cjWHWnTrSPsVY2uG5EPdS2FMYOpMCp9uroqUoDJPzSo54S0YZD2EsfN/HUKGpz9MwR+5IlYZ80Q/IMGqJEyJvM43IMMqs1JGOwvAET3flfyh+HLwh3duKe77H4ujh8A1XCynXJlt7YzLkbvikv4Xg7OEYDOE5yzTXXrUhA7wZhKEnzIdXWpUhDe1pgd3JHvZleEMh0MfjtyrDgY1L08GatLhYaTisuUV6fN4VjyqPzhDcS6eJ0egMNSsvxPQ68ge2w9l225PZlGSYX+zNToFWRYuTLZEe/wqsaDplWG0fYVMiGWo+y85IpfmrHQ/ToJisKG9ZfI+GGmYfAohsOA8T9OwwV+0xTVqzY8PZeeAu3uzqBNlQ4AMMi8F6u/8DhpomDIvrfG3eqyijCcO9OKXslCYMi4BjtHoqX00ThsUkjHjKd7ZKE4aL8ySs1bsxZUze5LHsqOza17vzc5JuEM+kICjFw3l65Z2d+hDy58UUT92zb4sZYFrlFtMKsjHNwg8pDXvQCBtkEfRhPIMgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgyD34Dw5BLWlGBx2rAAAAAElFTkSuQmCC" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="styling2.js"></script>
+</body>
+</html>

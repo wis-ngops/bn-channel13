@@ -1,0 +1,770 @@
+body{
+background-color: #F8F9FA;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* DESKTOP */
+@media (min-width : 1024px) {
+  .offcanvas {
+    visibility      : visible;
+    position        : relative;
+    background      : none;
+    border          : none;
+    justify-content : end;
+    
+  }
+
+  #kanan-headline{
+    padding: 0px;
+  }
+
+  .program-nav{
+    display: none;
+    visibility: hidden;
+  }
+
+  #form-mobile{
+    display: none;
+    visibility: hidden;
+  }
+
+  .sosmed-nav{
+    display: none;
+    visibility: hidden;
+  }
+  .konten-mobile{
+    display: none;
+    visibility: hidden;
+  }
+
+  #citizen{
+    width: 400px;
+  }
+  
+  #konten-mostpop{
+    width: 40%; 
+    object-fit:cover; 
+    height:90px;
+    border-radius: 3px;
+  }
+
+  #ad-banner{
+    width: 415px; 
+    height: 140px; 
+    object-fit: cover;
+  }
+}
+
+/* TABLET */
+@media (max-width: 968px) {
+  .offcanvas {
+    width : 450px !important;
+  }
+  .offcanvas-start-lg {
+    top          : 0;
+    left         : 0;
+    transform    : translateX(-100%);
+    transition: all .25s ease-out;
+  }
+
+  #livelogo{
+    visibility: hidden;
+    display: none;
+  }
+
+  #section-mostpop{
+    display: none;
+  }
+
+  #ad-banner{
+    width: 715px; 
+    height: 140px; 
+    object-fit: cover;
+  }
+  
+  #citizen{
+    width: 350px;
+  }
+
+  .play{
+    visibility: hidden;
+  }
+
+  #form-web{
+    display: none;
+    visibility: hidden;
+  }
+  
+}
+
+/* MOBIILE */
+@media (min-width: 768px) {
+  .konten-mobile{
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  #livelogo{
+    visibility: hidden;
+    display: none;
+  }
+
+  #customView{
+    visibility: hidden;
+    display: none;
+  }
+
+  #mobile-categories{
+    width: 40%; 
+    object-fit:cover; 
+  }
+  
+  .play{
+    visibility: hidden;
+  }
+  
+  .offcanvas {
+    width : 250px !important;
+  }
+  .offcanvas-start-lg {
+    top          : 0;
+    left         : 0;
+    transform    : translateX(-100%);
+    transition: all .25s ease-out;
+  }
+
+  .navbar{
+    position: fixed;
+    right: 0;
+    left: 0;   
+    border-radius: 0;
+    top: 0;
+    z-index: 9999;
+  } 
+
+  #newsticker{
+    margin-top: 70px;
+  }
+
+  #konten-search{
+    margin-top: 90px;
+  }
+
+  #kanan-headline{
+    padding: 16px 0px;
+    margin-top: 16px;
+  }
+
+  #card-kategori{
+    padding: 16px 0px;
+    margin-top: 16px;
+  }
+
+  #carousel-container{
+    padding: 0px;
+    padding-top: 0px;
+  }
+
+  #newsticker{
+    padding: 0px;
+    padding-top: 0px;
+  }
+
+  #div-kanan{
+  visibility: hidden;
+  display: none;
+  }
+
+  .konten-web{
+    display: none;
+    visibility: hidden;
+  }
+
+  .konten-mobile{
+    visibility: visible;
+  }
+
+  #ad-banner{
+    width: 415px; 
+    height: 140px; 
+    object-fit: cover;
+  }
+
+  #citizen{
+    width: 320px;
+  }
+}
+  
+
+@font-face {
+  font-family: Gotham-Black;
+  src: url(font/Gotham-Black.otf);
+}
+
+@font-face {
+  font-family: Gotham-Medium;
+  src: url(font/GothamMedium.ttf);
+}
+
+@font-face {
+  font-family: Gotham-Light;
+  src: url(font/Gotham-Light.otf);
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url(font/GothamBook.ttf);
+}
+
+.navbar-toggler span {
+  display: block;
+  background-color: #4f4f4f;
+  height: 3px;
+  width: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  left: 0;
+  opacity: 1;
+  transition: all 0.35s ease-out;
+  transform-origin: center left;
+}
+
+.navbar-toggler span:nth-child(1) {
+  transform: translate(0%, 0%) rotate(0deg);
+}
+
+.navbar-toggler span:nth-child(2) {
+  opacity: 1;
+}
+
+.navbar-toggler span:nth-child(3) {
+  transform: translate(0%, 0%) rotate(0deg);
+}
+
+.navbar-toggler span:nth-child(1) {
+  margin-top: 0.3em;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  transform: translate(15%, -33%) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  transform: translate(15%, 33%) rotate(-45deg);
+}
+
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: #000000;
+    border-radius: 2px;
+}
+
+#judul-nav {
+  display: inline-block;
+  position: relative;
+}
+
+#judul-nav:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #10317E;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+#judul-nav:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#judul-nav:hover{
+  color: #10317E;
+  font-weight: 700;
+}
+
+.ticker-wrapper-h{
+	display: flex;	
+	position: relative;
+	overflow: hidden;
+  background-color: #FFA500;
+}
+
+.ticker-wrapper-h .heading{
+	background-color: #10317E;
+	color: #fff;
+	padding: 5px 10px;
+	flex: 0 0 auto;
+	z-index: 1000;
+}
+.ticker-wrapper-h .heading:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	border-left: 20px solid #10317E;
+	border-top: 17px solid transparent;
+	border-bottom: 15px solid transparent;
+}
+
+
+.news-ticker-h{
+	display: flex;
+	margin:0;
+	padding: 0;
+	padding-left: 50%;
+	z-index: 999;
+	
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-name: tic-h;
+	animation-duration: 90s;
+	
+}
+.news-ticker-h:hover { 
+	animation-play-state: paused; 
+}
+
+.news-ticker-h li{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	white-space: nowrap;
+	padding-left: 20px;
+}
+
+.news-ticker-h li a{
+	color: #212529;
+	font-weight: bold;
+}
+
+@keyframes tic-h {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+	}
+	100% {
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
+
+.carousel-caption {
+    left: 15%;
+    top: 50% !important;
+    transform: translateY(-30%);
+    text-align: left;
+    bottom: initial;
+}
+
+.carousel-caption h1 {  
+    margin: 0px ;
+    padding: 0px ;
+    text-align: left ;
+    font-size: px;
+}
+
+.carousel-caption p {
+    margin-top: 3px !important;
+    line-height:20px ;
+    margin-bottom: 10px ;
+    text-align: left ;
+}
+
+.card-body a:hover{
+  color: white;
+}
+
+#banner1{
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73) 90%),
+    url('https://image-cdn.medkomtek.com/nhYNeXJBiQSTY4SnNkzqCRl5Nbo=/1200x675/smart/klikdokter-media-buckets/medias/2325856/original/075525600_1629093715-Suntik-Vaksin-Kosong.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 510px;
+    background-position: center;
+}
+
+#banner2{
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73) 90%),
+    url('https://img.okezone.com/content/2022/07/27/470/2637232/ada-citayam-fashion-week-berapa-sewa-gedung-di-dukuh-atas-8GPJA39HL2.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 510px;
+    color: white;
+    background-position: center;
+}
+
+#banner3{
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73) 90%),
+    url('https://cdn0-production-images-kly.akamaized.net/NUMC8TPcJOwh8bB4w_IVe85snTE=/1231x710/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/4107461/original/054807700_1659334904-KPU_Terima_Pendaftaran_Partai_Politik_untuk_Pemilu_2024-Angga-9.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 510px;
+    color: white;
+    background-position:top;
+}
+
+#banner4{
+  background-image:
+  linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73) 90%),
+  url('https://awsimages.detik.net.id/community/media/visual/2022/08/03/momen-kunjungan-pelosi-biang-kerok-china-setop-pasok-pasir-ke-taiwan-2_169.jpeg?w=1200');
+  background-size: cover;
+  width: 100%;
+  height: 510px;
+  color: white;
+  background-position:top;
+}
+
+
+#banner5{
+  background-image:
+  linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73) 90%),
+  url('https://cdn.medcom.id/images/videos/2022/08/03/1459233/PI0fJiU8wH.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 510px;
+  color: white;
+  background-position:top;
+}
+
+
+.input-group-append {
+  cursor: pointer;
+}
+
+.owl-carousel .owl-nav {
+  overflow: hidden;
+  height: 0px;
+}
+
+.owl-carousel .item {
+  text-align: center;
+}
+.owl-carousel .nav-button {
+  height: 50px;
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 100px !important;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0.25;
+}
+.owl-carousel .owl-prev {
+  left: 0px;
+}
+.owl-carousel .owl-next {
+  right: 0px;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  color: #ffffff;
+  font-size: 30px;
+  background: #0378BE;
+  border-radius: 2px;
+}
+.owl-carousel .prev-carousel:hover {
+  background-position: 0px -20px;
+}
+.owl-carousel .next-carousel:hover {
+  background-position: -5px -20px;
+}
+
+#cekFak{
+  background-color: #f0f0f0;
+}
+
+.hover-mask a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hover-mask img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .hover-mask:hover img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  .hover-mask a span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 15% 100px;
+    text-align: center;
+    background-color: rgb(16, 49, 126, 0.6);
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+
+  .hover-mask:hover a span {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+
+  .hover-mask .play {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    color: #fff;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+
+  .hover-mask:hover .play {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=1)";
+    filter: alpha(opacity=1);
+    opacity: 1;
+  }
+
+  .hover-mask a .cekFak {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 20% 85px;
+    text-align: center;
+    background-color: rgb(245, 169, 37, 0.6);
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+
+  .hover-mask:hover a .cekFak {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+
+  .hover-mask a .mostPop {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 10% 120px;
+    text-align: center;
+    background-color: rgb(16, 49, 126, 0.6);
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+
+  .hover-mask:hover a .mostPop {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+
+  .hover-mask a .kanal_home {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 10% 120px;
+    text-align: center;
+    background-color: rgb(16, 49, 126, 0.6);
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+
+  .hover-mask:hover a .kanal_home {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+
+  .hover-mask a .pageDetail {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 15% 120px;
+    text-align: center;
+    background-color: rgba(245, 169, 37, 0.6);
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+
+  .hover-mask:hover a .pageDetail {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+
+  .program{
+    width: 150px;
+    height: 7vw; 
+    min-height: 230px; 
+    object-fit: cover;
+    border-radius: 4px;
+    
+  }
+
+  #img-categories{
+    width: 100%;
+    min-height: 50px; 
+    max-height: 110px;
+    object-fit: cover;
+  }
+
+  #judul-categories{
+    color:#10317E; 
+    text-align: left;
+    font-family: Gotham-Black; 
+    font-size: 22px; 
+    border-left: 3px solid #0378BE ;
+  }
+
+  #btn-insta {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet);
+    --bs-btn-border-color: var(--bd-violet);
+    --bs-btn-border-radius: .5rem;
+    
+    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+  }
+
+  #carousel-container, #newsticker, #container2{
+    -webkit-animation: fadeInLeft 1s both;
+  }
+  
+  @-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-70px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translatey(0);
+    }
+  }
+
+  #container2{
+    -webkit-animation: fadeIntop 1.5s both;
+  }
+  
+  @-webkit-keyframes fadeIntop {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(90px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translatey(0);
+    }
+  }
+  

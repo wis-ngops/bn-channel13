@@ -1,0 +1,239 @@
+body{
+    background-color: #e2e2e2;
+  }
+  
+  @font-face {
+    font-family: Gotham-Black;
+    src: url(font/Gotham-Black.otf);
+  }
+  
+  @font-face {
+    font-family: Gotham-Medium;
+    src: url(font/GothamMedium.ttf);
+  }
+  
+  @font-face {
+    font-family: Gotham-Light;
+    src: url(font/Gotham-Light.otf);
+  }
+  
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: #000000;
+    border-radius: 2px;
+}
+
+@media (min-width : 1024px) {
+    .offcanvas {
+      visibility      : visible;
+      position        : relative;
+      background      : none;
+      border          : none;
+      justify-content : end;
+    }
+
+    #konten-index{
+      margin-top: 40px;
+      border-radius: 10px;
+    }
+
+    #isi-konten{
+      padding: 0 0;
+      margin: 0 0;
+    }
+
+    .program-nav{
+      display: none;
+      visibility: hidden;
+    }
+  
+    #form-mobile{
+      display: none;
+      visibility: hidden;
+    }
+  
+    .sosmed-nav{
+      display: none;
+      visibility: hidden;
+    }
+
+    .konten-mobile{
+      visibility: hidden;
+      display: none;
+    }
+
+    .sticky-top{
+      padding: 32px;
+    }
+    .list-mobile{
+      visibility: hidden;
+      display: none;
+    }
+
+    #nav-tabContent{
+     padding-top: 16px;
+    }
+
+
+}
+
+/* TABLET */
+@media (max-width: 968px) {
+  .offcanvas {
+    width : 450px !important;
+  }
+  .offcanvas-start-lg {
+    top          : 0;
+    left         : 0;
+    transform    : translateX(-100%);
+    transition: all .25s ease-out;
+  }
+
+  .konten-web{
+    visibility: hidden;
+    display: none;
+  }
+
+  #form-web{
+    display: none;
+    visibility: hidden;
+  }
+
+}
+
+@media (max-width : 767px) {
+  .offcanvas {
+    width : 250px !important;
+  }
+  .offcanvas-start-lg {
+    top          : 0;
+    left         : 0;
+    border-right : 1px solid rgba(0, 0, 0, .2);
+    transform    : translateX(-100%);
+    transition: all .25s ease-out;
+  }
+
+  .navbar{
+    position: fixed;
+    right: 0;
+    left: 0;   
+    border-radius: 0;
+    top: 0;
+    z-index: 9999;
+  } 
+
+  #form-web{
+    display: none;
+    visibility: hidden;
+  }
+
+  #konten-index{
+    margin-top:80px;
+  }
+
+  #judul-index{
+    display: none;
+    visibility: hidden;
+  }
+
+  .list-web{
+    visibility: hidden;
+    display: none;
+  }
+
+  #judul-navbarindex{
+    padding-top: 10px;
+  }
+}
+
+#judul-nav {
+  display: inline-block;
+  position: relative;
+}
+
+#judul-nav:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #10317E;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+#judul-nav:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#judul-nav:hover{
+  color: #10317E;
+  font-weight: 700;
+}
+.navbar-toggler span {
+  display: block;
+  background-color: #4f4f4f;
+  height: 3px;
+  width: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  left: 0;
+  opacity: 1;
+  transition: all 0.35s ease-out;
+  transform-origin: center left;
+}
+
+.navbar-toggler span:nth-child(1) {
+  transform: translate(0%, 0%) rotate(0deg);
+}
+
+.navbar-toggler span:nth-child(2) {
+  opacity: 1;
+}
+
+.navbar-toggler span:nth-child(3) {
+  transform: translate(0%, 0%) rotate(0deg);
+}
+
+.navbar-toggler span:nth-child(1) {
+  margin-top: 0.3em;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  transform: translate(15%, -33%) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  transform: translate(15%, 33%) rotate(-45deg);
+}
+
+#date_icon{
+    padding-left: 20px;
+}
+
+.owl-carousel .owl-prev {
+ display: none;
+ visibility: hidden;
+}
+.owl-carousel .owl-next {
+   display: none;
+   visibility: hidden;
+}
+
+.scroll{
+  margin: 4px, 4px;
+  padding: 4px;
+  height: 55px;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: nowrap;
+}
